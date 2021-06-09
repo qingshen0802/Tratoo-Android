@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.tratto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/dashboard_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.EmailLoginActivity"
+            android:label="@string/email_login_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.WelcomeActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.RegisterPersonActivity"
+            android:label="@string/register_person_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.WelcomeActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.TermsActivity"
+            android:label="@string/terms_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.RegisterPersonActivity" />
+        </activity>
+        <activity android:name=".Activity.RegisterCompanyActivity" />
+        <activity
+            android:name=".Activity.ForgotPasswordActivity"
+            android:label="@string/forgot_password_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.EmailLoginActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.PhoneVerificationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.ConfirmSMSActivity"
+            android:label="@string/confirm_sms_title" />
+        <activity
+            android:name=".Activity.NewPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.ResponsibleUserActivity"
+            android:label="@string/responsible_user_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.RegisterPersonActivity" />
+        </activity>
+    </application>
+
+</manifest>

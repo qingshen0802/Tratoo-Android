@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/dialog_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_rounded_view_big"
+        android:padding="24dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/receipt_dialog_profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="false"
+            android:src="@drawable/user_example"
+            app:civ_border_color="@color/dark_blue"
+            app:civ_border_width="1dp"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_receipt_dialog_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/receipt_dialog_profile_image"
+            android:text="Marcos Lima"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_receipt_dialog_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/receipt_dialog_profile_image"
+            android:layout_alignStart="@+id/text_receipt_dialog_full_name"
+            android:text="marcos_lima"
+            android:textColor="@color/ultra_dark_blue"
+            android:textSize="14sp"
+            font:customFont="Roboto_Regular.ttf" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginStart="-3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView14"
+        android:background="@drawable/bottom_round_view_big"
+        android:padding="24dp">
+
+        <br.com.tratto.CustomView.FontButton
+            android:id="@+id/btn_receipt_dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/text_receipt_dialog_authorization"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:text="FECHAR"
+            android:textColor="@color/light_blue"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_receipt_dialog_authorization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView34"
+            android:layout_marginTop="8dp"
+            android:text="0912-0129-0129-0122"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_receipt_dialog_type"
+            android:layout_marginTop="12dp"
+            android:text="AUTORIZAÇÃO"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_receipt_dialog_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView32"
+            android:layout_marginTop="8dp"
+            android:text="#pagamento"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text_receipt_dialog_amount"
+            android:layout_marginTop="24dp"
+            android:text="TAGS"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_receipt_dialog_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text_receipt_dialog_date"
+            android:layout_marginTop="12dp"
+            android:text="R$ 9,900,000"
+            android:textColor="@color/dark_blue"
+            android:textSize="32sp"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_receipt_dialog_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19 de Julho ás 12:00"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf" />
+    </RelativeLayout>
+</RelativeLayout>

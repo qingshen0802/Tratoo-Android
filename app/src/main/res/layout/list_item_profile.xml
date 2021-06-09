@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/profile_list_item_back">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_choose_profile_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/user_example" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_choose_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_choose_profile_image"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/image_choose_profile_image"
+        android:maxLines="1"
+        android:text="TextView"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        font:customFont="Roboto_Regular.ttf" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_choose_profile_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_choose_profile_image"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/image_choose_profile_image"
+        android:text="TextView"
+        android:maxLines="1"
+        android:textColor="@color/ultra_dark_blue"
+        font:customFont="Roboto_Regular.ttf" />
+</RelativeLayout>

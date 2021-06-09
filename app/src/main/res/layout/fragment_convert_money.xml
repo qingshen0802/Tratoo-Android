@@ -1,0 +1,260 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context="br.com.tratto.Fragment.Service.ConvertMoney.ConvertMoneyFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <br.com.tratto.CustomView.FontButton
+            android:id="@+id/btn_convert_money_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/light_blue"
+            android:text="@string/btn_continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/container_00002"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/rounded_view"
+            android:paddingBottom="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_convert_money_target_flag"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_flag_us"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner_convert_money_target_wallet_selector"
+                app:layout_constraintDimensionRatio="h,1:1"
+                app:layout_constraintLeft_toLeftOf="@+id/textView72"
+                app:layout_constraintTop_toTopOf="@+id/spinner_convert_money_target_wallet_selector"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Spinner
+                android:id="@+id/spinner_convert_money_target_wallet_selector"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_convert_money_tareget_amount"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/image_convert_money_target_flag"
+                app:layout_constraintRight_toLeftOf="@+id/edit_convert_money_tareget_amount"
+                app:layout_constraintTop_toTopOf="@+id/edit_convert_money_tareget_amount" />
+
+            <ru.kolotnev.formattedittext.DecimalEditText
+                android:id="@+id/edit_convert_money_tareget_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="right"
+                android:paddingStart="36dp"
+                android:text="0.00"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                app:customFont="Roboto_Regular.ttf"
+                app:layout_constraintLeft_toRightOf="@+id/spinner_convert_money_source_wallet"
+                app:layout_constraintRight_toRightOf="@+id/edit_convert_money_source_amount"
+                app:layout_constraintTop_toBottomOf="@+id/textView74"
+                app:rounding="2" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="@string/money_amount"
+                app:layout_constraintLeft_toLeftOf="@+id/textView66"
+                app:layout_constraintTop_toTopOf="@+id/textView72" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/convert_money_target"
+                app:layout_constraintLeft_toLeftOf="@+id/textView65"
+                app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/light_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+            <Spinner
+                android:id="@+id/spinner_convert_money_source_wallet"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:theme="@style/spinnerStyle"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_convert_money_source_amount"
+                app:layout_constraintLeft_toRightOf="@+id/image_convert_money_source_flag"
+                app:layout_constraintRight_toLeftOf="@+id/edit_convert_money_source_amount"
+                app:layout_constraintTop_toTopOf="@+id/edit_convert_money_source_amount" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/text_convert_money_source_currency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="R$"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_convert_money_source_amount"
+                app:layout_constraintLeft_toLeftOf="@+id/edit_convert_money_source_amount"
+                app:layout_constraintTop_toTopOf="@+id/edit_convert_money_source_amount"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money_amount"
+                android:textColor="@color/ultra_dark_blue"
+                app:layout_constraintLeft_toLeftOf="@+id/text_convert_money_source_currency_name"
+                app:layout_constraintTop_toTopOf="@+id/textView65"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/convert_money_source"
+                android:textColor="@color/ultra_dark_blue"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <ru.kolotnev.formattedittext.DecimalEditText
+                android:id="@+id/edit_convert_money_source_amount"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:gravity="right"
+                android:inputType="number"
+                android:paddingStart="36dp"
+                android:text=""
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                app:customFont="Roboto_Regular.ttf"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView66"
+                app:rounding="2" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/ultra_dark_gray"
+                app:layout_constraintLeft_toLeftOf="@+id/textView65"
+                app:layout_constraintRight_toRightOf="@+id/spinner_convert_money_source_wallet"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_convert_money_source_wallet" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_convert_money_source_flag"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_flag_brazil_round"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner_convert_money_source_wallet"
+                app:layout_constraintDimensionRatio="h,1:1"
+                app:layout_constraintLeft_toLeftOf="@+id/textView65"
+                app:layout_constraintTop_toTopOf="@+id/spinner_convert_money_source_wallet"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/text_convert_money_target_currency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:text="$"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_convert_money_tareget_amount"
+                app:layout_constraintLeft_toLeftOf="@+id/edit_convert_money_tareget_amount"
+                app:layout_constraintTop_toTopOf="@+id/edit_convert_money_tareget_amount"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <TextView
+                android:id="@+id/textView79"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/ultra_dark_gray"
+                app:layout_constraintLeft_toLeftOf="@+id/image_convert_money_target_flag"
+                app:layout_constraintRight_toLeftOf="@+id/text_convert_money_target_currency_name"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_convert_money_target_wallet_selector" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_00002"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="@string/convert_money_help"
+            android:textColor="@color/white"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_convert_money_help_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView80"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="1U$ = R$ 3.51 , R$1.00 = 0.35U$"
+            android:textColor="@color/white"
+            font:customFont="Roboto_Regular.ttf" />
+    </RelativeLayout>
+</FrameLayout>

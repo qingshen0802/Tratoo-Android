@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_view">
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/textView90"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dialog_profile_choose_title"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        font:customFont="Roboto_Regular.ttf" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/textView91"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/dialog_profile_choose_sub_title"
+        android:textColor="@color/ultra_dark_blue"
+        android:textSize="14sp"
+        font:customFont="Roboto_Regular.ttf" />
+
+    <ListView
+        android:id="@+id/list_choose_profiles"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="24dp"
+        android:choiceMode="singleChoice"/>
+
+    <br.com.tratto.CustomView.FontButton
+        android:id="@+id/btn_dialog_choose_profile_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:text="@string/btn_continue"
+        android:textColor="@color/light_blue"
+        android:textSize="18sp"
+        font:customFont="Roboto_Regular.ttf" />
+</LinearLayout>

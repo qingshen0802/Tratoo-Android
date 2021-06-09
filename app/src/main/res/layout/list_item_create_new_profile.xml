@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/profile_list_item_back">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_00001"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_create_new_profile" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_00004"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/image_00001"
+        android:maxLines="1"
+        android:text="@string/dialog_profile_choose_create_new_profile"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        font:customFont="Roboto_Regular.ttf" />
+
+
+</RelativeLayout>

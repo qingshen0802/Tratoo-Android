@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_business_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/user_placeholder" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_business_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/image_business_profile"
+        android:text="Pizza Hut Shopping Eldorado"
+        android:textColor="@android:color/black"
+        app:customFont="Roboto_Regular.ttf"
+        android:textSize="18sp" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_business_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_business_profile"
+        android:layout_alignStart="@+id/text_business_title"
+        android:text="business"
+        app:customFont="Roboto_Regular.ttf"
+        android:textColor="@color/light_gray"
+        android:textSize="14sp" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_business_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_business_username"
+        android:layout_alignBottom="@+id/text_business_username"
+        android:layout_alignParentEnd="true"
+        android:text="200m"
+        app:customFont="Roboto_Regular.ttf"
+        android:textColor="@color/light_gray"
+        android:textSize="14sp" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_business_credit_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_business_username"
+        android:layout_below="@+id/text_business_username"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/green_round_view"
+        android:padding="4dp"
+        android:text="R$33,00"
+        app:customFont="Roboto_Medium.ttf"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_business_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_business_credit_amount"
+        android:layout_alignBottom="@+id/text_business_credit_amount"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/text_business_credit_amount"
+        android:background="@drawable/blue_round_view"
+        android:padding="4dp"
+        android:text="20%"
+        app:customFont="Roboto_Medium.ttf"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_business_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_business_credit_amount"
+        android:layout_below="@+id/text_business_credit_amount"
+        android:layout_marginTop="12dp"
+        android:text="R$|USD"
+        app:customFont="Roboto_Medium.ttf"
+        android:textColor="@color/dark_blue"
+        android:textSize="12sp" />
+</RelativeLayout>

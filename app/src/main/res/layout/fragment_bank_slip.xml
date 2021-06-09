@@ -1,0 +1,163 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="br.com.tratto.Fragment.Service.LoadMoney.BankSlipFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:padding="16dp">
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/bank_slip_code"
+                android:textColor="@color/ultra_dark_blue"
+                android:textSize="14sp"
+                font:customFont="Roboto_Regular.ttf"/>
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text_bank_slip_code_value"
+                android:layout_marginTop="2dp"
+                android:background="@color/mid_light_gray" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/text_bank_slip_code_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView56"
+                android:layout_marginTop="4dp"
+                android:text="39994.3948328 4949494.485439"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView61"
+                android:layout_marginTop="23dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingEnd="12dp">
+
+                    <br.com.tratto.CustomView.FontTextView
+                        android:id="@+id/textView67"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/money_amount"
+                        android:textColor="@color/ultra_dark_blue"
+                        android:textSize="14sp"
+                        font:customFont="Roboto_Regular.ttf"/>
+
+                    <br.com.tratto.CustomView.FontTextView
+                        android:id="@+id/text_bank_slip_amount_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="R$ 350,00"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp"
+                        font:customFont="Roboto_Regular.ttf" />
+
+                    <br.com.tratto.CustomView.FontTextView
+                        android:id="@+id/textView70"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/mid_light_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <br.com.tratto.CustomView.FontTextView
+                        android:id="@+id/textView73"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/bank_slip_date"
+                        android:textColor="@color/ultra_dark_blue"
+                        android:textSize="14sp"
+                        font:customFont="Roboto_Regular.ttf"/>
+
+                    <br.com.tratto.CustomView.FontTextView
+                        android:id="@+id/text_bank_slip_date_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:text="10-01-17"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp"
+                        font:customFont="Roboto_Regular.ttf" />
+
+                    <br.com.tratto.CustomView.FontTextView
+                        android:id="@+id/textView71"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/mid_light_gray" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView76"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_bank_slip_continue"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:background="#EFF1F4"
+            android:padding="18dp"
+            android:text="@string/bank_slip_description"
+            android:textColor="#16243a"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontButton
+            android:id="@+id/btn_bank_slip_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/light_blue"
+            android:text="@string/btn_continue"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            font:customFont="Roboto_Regular.ttf"/>
+    </RelativeLayout>
+
+</FrameLayout>

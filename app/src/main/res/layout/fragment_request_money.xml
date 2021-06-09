@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <br.com.tratto.CustomView.FontButton
+        android:id="@+id/btn_request_money_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/light_blue"
+        android:text="@string/request_money_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:customFont="Roboto_Regular.ttf" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_request_money_continue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/request_money_target"
+                app:customFont="Roboto_Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_request_money_person"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/ic_person"
+                    app:civ_border_color="@color/dark_blue"
+                    app:civ_border_width="1dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_request_money_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/request_money_username_placeholder"
+                        android:maxLength="70"
+                        android:maxLines="1"
+                        android:textSize="16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/request_money_wallet"
+                app:customFont="Roboto_Regular.ttf" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <Spinner
+                    android:id="@+id/spinner_request_money_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="48dp"
+                    android:theme="@style/spinnerStyle" />
+
+                <ImageView
+                    android:id="@+id/image_flag"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_flag_brazil_round" />
+
+                <TextView
+                    android:id="@+id/textView88"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/light_gray" />
+
+            </RelativeLayout>
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/request_money_amount"
+                app:customFont="Roboto_Regular.ttf" />
+
+            <RelativeLayout
+                android:layout_width="156dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp">
+
+                <ru.kolotnev.formattedittext.DecimalEditText
+                    android:id="@+id/editText_request_money_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:gravity="right|center"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingStart="36dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18sp"
+                    app:customFont="Roboto_Regular.ttf"
+                    app:rounding="2" />
+
+                <br.com.tratto.CustomView.FontTextView
+                    android:id="@+id/text_request_money_wallet_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:text="R$"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18sp"
+                    app:customFont="Roboto_Regular.ttf" />
+
+            </RelativeLayout>
+
+            <br.com.tratto.CustomView.FontEditText
+                android:id="@+id/editText_request_money_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="@string/request_money_message"
+                android:inputType="textMultiLine"
+                android:maxLength="500"
+                android:textSize="18sp"
+                app:customFont="Roboto_Regular.ttf" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

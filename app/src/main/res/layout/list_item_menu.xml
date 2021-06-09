@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/image_menu_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_user"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_menu_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/image_menu_icon"
+        android:maxLines="1"
+        app:customFont="Roboto_Regular.ttf"
+        android:text="TextView"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_menu_item_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_menu_item_title"
+        android:layout_below="@+id/text_menu_item_title"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        app:customFont="Roboto_Regular.ttf"
+        android:text="TextView"
+        android:textColor="@color/light_gray"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_round_view_big_green"
+        android:padding="36dp"
+        android:id="@+id/relativeLayout3">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            font:srcCompat="@drawable/ic_green_check" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_dialog_load_money_done_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/imageView17"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/dialog_load_done_head"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            font:customFont="Roboto_Regular.ttf"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_round_view_big"
+        android:padding="24dp"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentStart="true">
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_dialog_load_done_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_load_done_description"
+            android:textSize="16sp"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_dialog_load_done_thanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_dialog_load_done_description"
+            android:layout_marginTop="12dp"
+            android:text="@string/dialog_load_done_thanks"
+            android:textColor="@color/ultra_dark_blue"
+            android:textSize="16sp"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontButton
+            android:id="@+id/btn_dialog_load_done_close"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/text_dialog_load_done_thanks"
+            android:layout_marginTop="48dp"
+            android:background="@android:color/transparent"
+            android:text="FECHAR"
+            android:textColor="@color/light_blue"
+            font:customFont="Roboto_Regular.ttf" />
+
+    </RelativeLayout>
+</RelativeLayout>

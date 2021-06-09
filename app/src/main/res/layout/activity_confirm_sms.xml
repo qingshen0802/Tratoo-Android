@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.tratto.Activity.ConfirmSMSActivity">
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:maxLines="3"
+        android:text="@string/confirm_sms_head"
+        android:textAlignment="center"
+        android:textColor="@color/ultra_dark_blue"
+        android:textSize="16sp"
+        font:customFont="Roboto_Regular.ttf" />
+
+    <com.alimuzaffar.lib.pin.PinEntryEditText
+        android:id="@+id/edit_confirm_sms_number"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="@color/ultra_dark_gray"
+        android:textColorHint="@color/ultra_dark_gray"
+        android:textIsSelectable="false"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:pinBackgroundDrawable="@drawable/grey_rectangle"
+        app:pinBackgroundIsSquare="true"
+        app:pinCharacterSpacing="28dp"
+        app:pinLineStroke="0dp"
+        app:pinRepeatedHint="X"
+        app:pinTextBottomPadding="8dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_confirm_sms_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_sms_not_receive"
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/btn_confirm_resend_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@android:color/transparent"
+            android:text="@string/confirm_sms_resend"
+            android:textColor="@color/light_blue"
+            font:customFont="Roboto_Regular.ttf" />
+
+    </LinearLayout>
+
+    <br.com.tratto.CustomView.FontButton
+        android:id="@+id/btn_confirm_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_blue"
+        android:text="@string/confirm_sms_confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        font:customFont="Roboto_Regular.ttf" />
+</RelativeLayout>

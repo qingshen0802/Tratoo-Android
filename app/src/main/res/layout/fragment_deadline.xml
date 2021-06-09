@@ -1,0 +1,233 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    tools:context="br.com.tratto.Fragment.Service.LoadMoney.DeadlineFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/rate_deadline_currency"
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Regular.ttf"
+            android:textSize="18sp" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView33"
+            android:layout_below="@+id/textView33"
+            android:layout_marginTop="16dp"
+            android:text="@string/rate_deadline_free_via"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView37"
+            android:layout_alignBottom="@+id/textView37"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/textView37"
+            android:text="DOC/TED"
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView37"
+            android:layout_below="@+id/textView37"
+            android:layout_marginTop="8dp"
+            android:text="@string/rate_deadline_free_via"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView38"
+            android:layout_alignTop="@+id/textView39"
+            android:text="Boleto Bancário "
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView39"
+            android:layout_below="@+id/textView39"
+            android:layout_marginTop="16dp"
+            android:text="@string/rate_deadline_max_amount"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView41"
+            android:layout_below="@+id/textView41"
+            android:layout_marginTop="8dp"
+            android:text="@string/rate_deadline_min_amount"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView41"
+            android:layout_alignBottom="@+id/textView41"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/textView42"
+            android:text="R$ 1.000,00"
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Medium.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView43"
+            android:layout_alignTop="@+id/textView42"
+            android:text="R$ 10,00"
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Medium.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView45"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView44"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@color/light_gray"
+            android:text="" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView45"
+            android:layout_marginTop="24dp"
+            android:text="@string/rate_deadline_payment"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView46"
+            android:layout_below="@+id/textView46"
+            android:layout_marginTop="16dp"
+            android:text="5%"
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView50"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/textView47"
+            android:text="@string/rate_deadline_surcharge_view"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView48"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/textView48"
+            android:text="@string/rate_deadline_credit_card"
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView47"
+            android:layout_below="@+id/textView47"
+            android:layout_marginTop="16dp"
+            android:text="@string/rate_deadline_max_amount"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView50"
+            android:layout_alignBottom="@+id/textView50"
+            android:layout_alignStart="@+id/textView44"
+            android:text="R$ 1.000,00"
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Medium.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView50"
+            android:layout_below="@+id/textView50"
+            android:layout_marginTop="8dp"
+            android:text="@string/rate_deadline_min_amount"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView52"
+            android:layout_alignBottom="@+id/textView52"
+            android:layout_alignStart="@+id/textView43"
+            android:text="R$ 0,01"
+            android:textColor="@color/dark_blue"
+            font:customFont="Roboto_Medium.ttf"/>
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView54"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignStart="@+id/textView45"
+            android:layout_below="@+id/textView53"
+            android:layout_marginTop="24dp"
+            android:background="@color/light_gray"
+            android:text="" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView54"
+            android:layout_below="@+id/textView54"
+            android:layout_marginTop="24dp"
+            android:text="@string/rate_deadline_description"
+            android:textColor="@color/ultra_dark_blue"
+            font:customFont="Roboto_Regular.ttf"/>
+    </RelativeLayout>
+</FrameLayout>

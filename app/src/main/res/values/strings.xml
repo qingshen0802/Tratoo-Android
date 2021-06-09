@@ -1,0 +1,265 @@
+<resources>
+    <string name="app_name">Tratto</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- Welcome screen -->
+    <string name="welcome_title">Solução digital para resolver seus\npagamentos do dia a dia.</string>
+    <string name="welcome_facebook_login">Use o Facebook para entrar</string>
+    <string name="welcome_email_signup">Crie uma conta com seu email</string>
+    <string name="welcome_email_login">Já tem uma conta?</string>
+    <string name="welcome_email_login2">Acessar</string>
+
+    <!--Email Login Screen-->
+    <string name="email_login_title">Acesse sua conta</string>
+    <string name="email_login_forget_password">Esqueci minha senha</string>
+    <string name="email_login_email_placeholder">Digite seu e-mail</string>
+    <string name="email_login_password_placeholder">Digite sua senha</string>
+    <string name="email_login_login_button">Continuar</string>
+
+    <!--Person Register screen-->
+    <string name="register_person_title">Cadastrar perfil pessoal</string>
+    <string name="register_person_username">Defina seu nome de usuário</string>
+    <string name="register_person_fullname">Seu nome completo</string>
+    <string name="register_person_email">Seu e-mail</string>
+    <string name="register_person_cpf">Seu CPF</string>
+    <string name="register_person_phone_number">Seu número de telefone</string>
+    <string name="register_person_password">Senha</string>
+    <string name="register_person_confirm_password">Confirme sua senha</string>
+    <string name="confirm_under_16">Tenho menos de 16 anos</string>
+    <string name="confirm_terms">Li e aceito os</string>
+    <string name="terms_condition">termos de uso</string>
+    <string name="create_person_profile">Cadastrar perfil</string>
+
+    <!--Company Register-->
+    <string name="register_company_title">Cadastrar perfil negócio</string>
+    <string name="register_company_name">Nome da empresa</string>
+    <string name="register_company_category">Sector</string>
+    <string name="register_company_cnpj">CNPJ</string>
+    <string name="register_confirm_manager">Sou o responsável pela empresa</string>
+    <string name="register_company_category_prompt">Sector</string>
+    <string-array name="register_company_category">
+        <item>Sector1</item>
+        <item>Sector2</item>
+        <item>Sector3</item>
+        <item>Sector4</item>
+    </string-array>
+
+    <string name="loading">Carregando...</string>
+    <string name="terms_title">Termos de uso</string>
+
+    <!-- MainActivity-->
+    <string name="dashboard_title">Dashboard</string>
+
+    <!--Side menu-->
+    <string name="nav_service">Serviços</string>
+    <string name="nav_activity">Rede</string>
+    <string name="nav_notification">Notificações</string>
+    <string name="nav_profile">Meu perfil</string>
+    <string name="nav_logout">Sair</string>
+
+    <!--Manage Wallet Actions-->
+    <string name="manage_title">Serviços</string>
+    <string name="manage_load">Carregar saldo</string>
+    <string name="manage_convert">Converter</string>
+    <string name="manage_report">Relatórios</string>
+    <string name="manage_redeem">Resgatar saldo</string>
+    <string name="manage_card">Cartão Virtual</string>
+    <string name="manage_invoice">Pagamento de contas</string>
+
+    <!--Profile Menu-->
+    <string name="menu_profile">Meu perfil</string>
+    <string name="menu_profile_sub">Dados pessoais, endereço, etc</string>
+    <string name="menu_contact">Meus contatos</string>
+    <string name="menu_contact_sub">Suas indicações, funcionários, etc</string>
+    <string name="menu_setting">Configurações</string>
+    <string name="menu_setting_sub">Altere suas configurações de segurança, etc</string>
+    <string name="menu_tratto">Tratto</string>
+    <string name="menu_tratto_sub">Maiores informações, ajuda, etc</string>
+
+    <!--Edit profile menu-->
+    <string name="edit_profile_menu">Meus dados</string>
+    <string name="edit_profile_menu_sub">Dados básicos do cadastro</string>
+    <string name="edit_profile_location">Meus endereços</string>
+    <string name="edit_profile_location_sub">Registre seus endereços</string>
+    <string name="edit_profile_document">Meus documentos</string>
+    <string name="edit_profile_document_sub">Faça o upload de alguns documentos</string>
+    <string name="edit_profile_bank">Minhas contas bancárias</string>
+    <string name="edit_profile_bank_sub">Informe seus dados bancários</string>
+    <string name="edit_profile_credit">Meus cartões de crédito</string>
+    <string name="edit_profile_credit_sub">Registre seus cartões de crédito</string>
+
+    <!--Contact fragment-->
+    <string name="contact_add_person">Convide seus amigos</string>
+    <string name="contact_add_person_sub">Compartilhe com os seus amigos</string>
+    <string name="contact_people">Meus indicados</string>
+    <string name="contact_people_sub">Suas indicações que se cadastraram</string>
+    <string name="contact_star">Meus funcionários</string>
+    <string name="contact_star_sub">Gerencie os funcionários do seu negócio</string>
+
+    <!--Tratto fragment-->
+    <string name="tratto_help">Ajuda</string>
+    <string name="tratto_help_sub">Está com problemas? Nós te ajudamos</string>
+    <string name="tratto_about_us">Sobre nós</string>
+    <string name="tratto_about_us_sub">Um pouco mais sobre nós</string>
+    <string name="tratto_contact_us">Fale conosco</string>
+    <string name="tratto_contact_us_sub">Envie-nos uma mensagem</string>
+
+    <!--Settings fragment-->
+    <string name="settings_touch_id">Touch id</string>
+    <string name="settings_touch_id_sub">Ativar Touch id</string>
+    <string name="settings_notification">Notificações PUSH</string>
+    <string name="settings_notification_sub">Ativar notificações</string>
+    <string name="settings_discount">Descontos</string>
+    <string name="settings_discount_sub">Ative descontos para seus clientes</string>
+    <string name="settings_coupon">Cupom de crédito</string>
+    <string name="settings_coupon_sub">Você conseguiu um cupom?</string>
+    <string name="settings_password">Alterar senha</string>
+    <string name="settings_password_sub">Altere sua senha antiga</string>
+    <string name="settings_cash_store">Saque em loja</string>
+    <string name="settings_cash_store_sub">Ative saques em sua loja</string>
+
+    <!--Forgot password-->
+    <string name="forgot_password_title">Esqueci minha senha</string>
+    <string name="forgot_password_head">Para prosseguir, informe o número do seu celular.</string>
+    <string name="forgot_password_button">Redefinir senha</string>
+
+    <!--Phone verification-->
+    <string name="phone_verify_head">Digite seu número de celular para prosseguir</string>
+
+    <!--Confirm SMS-->
+    <string name="confirm_sms_title">Verificação de segurança</string>
+    <string name="confirm_sms_head">Um código de segurança foi enviado para o número informado. Digite-o abaixo para confirmarmos seu telefone: </string>
+    <string name="confirm_sms_not_receive">Não recebeu? </string>
+    <string name="confirm_sms_resend">Reenviar</string>
+    <string name="confirm_sms_confirm">Confirmar telefone</string>
+
+    <!--New password-->
+    <string name="new_password_head">Criar senha</string>
+    <string name="new_password_description">Essa será sua senha de acesso</string>
+
+
+    <!--Wallet detail-->
+    <string name="wallet_detail_pay_or_send">Enviar/Pagar</string>
+    <string name="wallet_detail_request_or_charge">Solicitar/Cobrar</string>
+    <string name="wallet_detail_actions">Ações</string>
+    <string name="wallet_detail_transactions">Transações</string>
+
+    <!--Load Money-->
+    <string name="load_money_title">Carregar saldo</string>
+    <string name="load_money_wallet">Destino</string>
+    <string name="load_money_rate_deadline">Conheça nossas taxas e prazos</string>
+    <string name="btn_continue">Continuar</string>
+    <string-array name="load_money_transfer_methods">
+        <item>Método de pagamento</item>
+        <item>Transferência bancária</item>
+        <item>Boleto bancário</item>
+    </string-array>
+
+    <!--Rate and Deadlines-->
+    <string name="rate_deadline_title">Taxas e prazos</string>
+    <string name="rate_deadline_currency">Carregar moeda</string>
+    <string name="rate_deadline_free_via">Grátis via</string>
+    <string name="rate_deadline_max_amount">Valor máximo</string>
+    <string name="rate_deadline_min_amount">Valor mínimo</string>
+    <string name="rate_deadline_payment">Pagamentos</string>
+    <string name="rate_deadline_surcharge_view">de acréscimo via</string>
+    <string name="rate_deadline_credit_card">Cartão de Crédito</string>
+    <string name="rate_deadline_description">O valor é adicionado automaticamente com cartão de crédito. Em transferência bancária o prazo é de até 24h, e por boleto de até 2 dias úteis.</string>
+
+    <!--Bank transfer-->
+    <string name="bank_transfer_title">Transferência bancária</string>
+    <string name="bank_transfer_head">Selecione o banco desejado para efetuar a transferência de %1$s. O valor estará disponível na sua conta assim que o pagamento for identificado.</string>
+    <string name="bank_transfer_select_bank">Selecionar banco</string>
+    <string name="bank_transfer_attachment_description">Anexando um comprovante você acelera o processo de identificação do seu carregamento.</string>
+    <string name="bank_transfer_attachment">Anexar comprovante</string>
+
+    <!--Bank Slip-->
+    <string name="bank_slip_title">Boleto bancário</string>
+    <string name="bank_slip_code">Código</string>
+    <string name="money_amount">Quantia</string>
+    <string name="bank_slip_date">Data de validade</string>
+    <string name="bank_slip_description">Este boleto foi encaminhado para o seu e-mail. O valor estará disponível na sua conta assim que o pagamento for identificado.</string>
+
+    <!--Dialog Load done-->
+    <string name="dialog_load_done_head">Carregamento registrado</string>
+    <string name="dialog_load_done_description">Carregamento de saldo solicitado com sucesso. Aguarde para que o pagamento seja identificado e registrado em sua conta.</string>
+    <string name="dialog_load_done_thanks">Obrigado!</string>
+    <string name="btn_close">FEACHAR</string>
+
+    <!--Convert money-->
+    <string name="convert_money_title">Converter</string>
+    <string name="convert_money_help">Taxa de conversão atual</string>
+    <string name="convert_money_source">Origem</string>
+    <string name="convert_money_target">Destino</string>
+
+    <!--Dialog Convert done-->
+    <string name="dialog_convert_done_header">Conversão de valores registrada</string>
+    <string name="dialog_convert_done_message">Seu dinheiro já encontra-se na carteira destino informada.</string>
+
+    <!--Withdraw Money-->
+    <string name="withdraw_money_wallet">Origem</string>
+    <string name="withdraw_money_bank_transfer">Transferência bancária</string>
+    <string name="withdraw_money_bank_contact">Contas</string>
+    <string name="withdraw_money_transfer_store">Sacar em lojas autorizadas</string>
+    <string name="withdraw_money_store_contact">Lojas</string>
+    <string name="withdraw_money_description">Para a opção do resgate em loja, nós não nos responsabilizamos que a loja terá o montante em caixa, consulte o responsável antecipadamente.</string>
+    <string name="withdraw_money_title">Resgatar saldo</string>
+
+    <!--Dialog Withdraw done-->
+    <string name="dialog_withdraw_done_header">Solicitação registrada</string>
+    <string name="dialog_withdraw_done_message">O valor será depositado na conta bancária informada dentro do prazo estipulado.</string>
+
+    <!--Responsible User Activity-->
+    <string name="responsible_user_title">Cadastrar responsável</string>
+    <string name="responsible_user_name_placeholder">Nome completo do</string>
+    <string name="responsible_user_cpf_placeholder">CPF do responsável</string>
+    <string name="responsible_user_email_placeholder">E-mail do responsável</string>
+    <string name="responsible_user_continue_button">Cadastrar responsável</string>
+
+    <!--Business Fragment-->
+    <string name="business_title">Rede</string>
+
+    <!--Notification Fragment-->
+    <string name="notification_title">Notificações</string>
+
+    <!--Send Money Fragment-->
+    <string name="send_money_title">Enviar/Pagar</string>
+    <string name="send_money_target">Para</string>
+    <string name="send_money_wallet">Origem</string>
+    <string name="send_money_amount">Valor</string>
+    <string name="send_money_username_placeholder">Digite o @usuário, telefone ou email</string>
+    <string name="send_money_message">Mensagem</string>
+    <string name="send_money_continue">Enviar pagamento</string>
+    <string name="send_money_complete">Enviado com sucesso</string>
+
+    <!--Request Money Fragment-->
+    <string name="request_money_title">Solicitar/Cobrar</string>
+    <string name="request_money_target">Para</string>
+    <string name="request_money_wallet">Moeda</string>
+    <string name="request_money_amount">Valor</string>
+    <string name="request_money_username_placeholder">Digite o @usuário, telefone ou email</string>
+    <string name="request_money_message">Mensagem</string>
+    <string name="request_money_continue">Solicitar pagamento</string>
+    <string name="request_money_complete">Solicitado com sucesso</string>
+
+    <!--Profile Choose Dialog-->
+    <string name="dialog_profile_choose_title">Selecionar perfil</string>
+    <string name="dialog_profile_choose_sub_title">Qual perfil você deseja carregar?</string>
+    <string name="dialog_profile_choose_personal">Perfil pessoal</string>
+    <string name="dialog_profile_choose_company">Perfil negócio</string>
+    <string name="dialog_profile_choose_create_new_profile">Criar novo perfil</string>
+    <string name="salvar_senha">Salvar senha</string>
+    <string name="senha_atual">Senha atual</string>
+    <string name="nova_senha">Nova senha</string>
+    <string name="confirmar_nova_senha">Confirmar nova senha</string>
+    <string name="no_user_inserted_message">Preencha o usuário desejado</string>
+    <string name="seu_celular">Seu celular</string>
+</resources>

@@ -1,0 +1,321 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.tratto.Fragment.Profile.SettingsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Switch
+                android:id="@+id/switch_touch_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:theme="@style/switchStyle" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:text="@string/settings_touch_id"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView11"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="8dp"
+                android:text="@string/settings_touch_id_sub"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_security" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mid_light_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Switch
+                android:id="@+id/switch_push_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:theme="@style/switchStyle" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/imageView7"
+                android:text="@string/settings_notification"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_below="@+id/textView13"
+                android:layout_marginTop="8dp"
+                android:text="@string/settings_notification_sub"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_notification" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mid_light_gray" />
+
+        <LinearLayout
+            android:id="@+id/discount_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/btn_settings_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <br.com.tratto.CustomView.FontTextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:text="@string/settings_discount"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18sp"
+                    font:customFont="Roboto_Regular.ttf" />
+
+                <br.com.tratto.CustomView.FontTextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView15"
+                    android:layout_below="@+id/textView15"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/settings_discount_sub"
+                    android:textColor="@color/light_gray"
+                    android:textSize="14sp"
+                    font:customFont="Roboto_Regular.ttf" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_activity" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mid_light_gray" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_settings_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/imageView9"
+                android:text="@string/settings_coupon"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView17"
+                android:layout_below="@+id/textView17"
+                android:layout_marginTop="8dp"
+                android:text="@string/settings_coupon_sub"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_coupon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mid_light_gray" />
+
+        <RelativeLayout
+            android:id="@+id/btn_settings_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/imageView10"
+                android:text="@string/settings_password"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <br.com.tratto.CustomView.FontTextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_below="@+id/textView19"
+                android:layout_marginTop="8dp"
+                android:text="@string/settings_password_sub"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp"
+                font:customFont="Roboto_Regular.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_lock" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mid_light_gray" />
+
+        <LinearLayout
+            android:id="@+id/cash_store_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <Switch
+                    android:id="@+id/switch_cash_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:theme="@style/switchStyle" />
+
+                <br.com.tratto.CustomView.FontTextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/imageView11"
+                    android:text="@string/settings_cash_store"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18sp"
+                    font:customFont="Roboto_Regular.ttf" />
+
+                <br.com.tratto.CustomView.FontTextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView21"
+                    android:layout_below="@+id/textView21"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/settings_cash_store_sub"
+                    android:textColor="@color/light_gray"
+                    android:textSize="14sp"
+                    font:customFont="Roboto_Regular.ttf" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bag" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mid_light_gray" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

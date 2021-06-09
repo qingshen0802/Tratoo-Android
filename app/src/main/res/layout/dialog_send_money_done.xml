@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_round_view_big_green"
+        android:padding="36dp">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            font:srcCompat="@drawable/ic_green_check" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_dialog_send_money_done_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/imageView17"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/send_money_complete"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            font:customFont="Roboto_Regular.ttf" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout3"
+        android:background="@drawable/bottom_round_view_big"
+        android:padding="24dp">
+
+        <br.com.tratto.CustomView.FontButton
+            android:id="@+id/btn_dialog_send_done_close"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:text="FECHAR"
+            android:textColor="@color/light_blue"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_dialog_send_money_description"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/send_money_target"
+            android:textColor="@color/ultra_dark_blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_dialog_send_money_done_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Thiago Scatigno"
+            android:textColor="@color/special_blue"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView89"
+            app:layout_constraintTop_toBottomOf="@+id/textView89"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_dialog_send_money_done_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text=""
+            android:textColor="@color/ultra_dark_blue"
+            app:layout_constraintLeft_toLeftOf="@+id/textView89"
+            app:layout_constraintTop_toBottomOf="@+id/text_dialog_send_money_done_fullname"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView92"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/send_money_amount"
+            android:textColor="@color/ultra_dark_blue"
+            app:layout_constraintLeft_toLeftOf="@+id/textView89"
+            app:layout_constraintTop_toBottomOf="@+id/text_dialog_send_money_done_username"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_dialog_send_money_done_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:text="R$ 234,95"
+            android:textColor="@color/special_blue"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView89"
+            app:layout_constraintTop_toBottomOf="@+id/textView92"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_dialog_send_money_done_discount_clube"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:text=""
+            android:textColor="@color/ultra_dark_blue"
+            app:layout_constraintLeft_toLeftOf="@+id/textView89"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_dialog_send_money_done_amount"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/textView95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="16dp"
+            android:maxLength="500"
+            android:text="@string/send_money_message"
+            android:textColor="@color/ultra_dark_blue"
+            app:layout_constraintLeft_toLeftOf="@+id/textView89"
+            app:layout_constraintTop_toBottomOf="@+id/text_dialog_send_money_done_discount_clube"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_dialog_send_money_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/special_blue"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView89"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView95"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_dialog_send_money_profile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/user_example"
+            app:civ_border_color="@color/dark_blue"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_dialog_send_money_done_username"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_dialog_send_money_done_fullname"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

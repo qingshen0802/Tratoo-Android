@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_rapd_item_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user_placeholder" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_rapd_item_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_rapd_item_timestamp"
+        android:layout_alignTop="@+id/image_rapd_item_profile"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toStartOf="@+id/text_rapd_item_amount"
+        android:maxLines="1"
+        android:text="Pizza Hunt"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        font:customFont="Roboto_Medium.ttf" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_rapd_item_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_rapd_item_profile"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/image_rapd_item_profile"
+        android:text="12 mins ago"
+        font:customFont="Roboto_Regular.ttf" />
+
+    <br.com.tratto.CustomView.FontTextView
+        android:id="@+id/text_rapd_item_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:text="-R$ 100,00"
+        android:textSize="18sp"
+        font:customFont="Roboto_Regular.ttf" />
+</RelativeLayout>

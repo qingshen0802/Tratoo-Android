@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/container_000012"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/dark_blue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/side_menu_profile_image"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/user_placeholder" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_side_menu_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_side_menu_username"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/side_menu_profile_image"
+            android:maxLines="1"
+            android:text="Thiago"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <br.com.tratto.CustomView.FontTextView
+            android:id="@+id/text_side_menu_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/side_menu_profile_image"
+            android:layout_alignStart="@+id/text_side_menu_fullname"
+            android:layout_toStartOf="@+id/btn_side_menu_drop_down"
+            android:maxLines="1"
+            android:text="thiago"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp"
+            font:customFont="Roboto_Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/btn_side_menu_drop_down"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignBottom="@+id/text_side_menu_username"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_drop_down" />
+    </RelativeLayout>
+
+</RelativeLayout>
